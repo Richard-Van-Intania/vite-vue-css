@@ -1,1 +1,10 @@
-- create common ui patterns
+- do bootstrap use tailwind
+
+
+<script setup lang="ts"></script>
+
+<template>
+    <div></div>
+</template>
+
+<style scoped></style>

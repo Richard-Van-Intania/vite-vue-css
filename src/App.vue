@@ -1,7 +1,9 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import BasicModal from "./components/modals/BasicModal.vue";
+</script>
 
 <template>
-    <div class="text-3xl font-black underline bg-green-300">holaa</div>
+    <div><BasicModal /></div>
 </template>
 
 <style scoped></style>
