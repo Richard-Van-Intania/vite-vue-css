@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import BasicModal from "./components/modals/BasicModal.vue";
+import PlainModal from "./components/modals/PlainModal.vue";
 </script>
 
 <template>
-    <div><BasicModal /></div>
+    <div><PlainModal /></div>
 </template>
 
 <style scoped></style>

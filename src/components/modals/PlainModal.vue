@@ -8,7 +8,7 @@ const showDialog = ref<boolean>(false);
         <button type="button" class="bg-blue-500 px-8 py-4 rounded-full text-white font-medium text-2xl m-10 z-10" v-on:click="showDialog = !showDialog">Show dialog</button>
     </div>
     <div class="fixed inset-0 w-full h-full bg-blk-op-50 justify-center items-center z-50" v-bind:class="[showDialog ? 'flex' : 'hidden']">
-        <div class="flex justify-center items-center w-96 h-52 bg-amber-200 rounded-4xl"><button type="button" v-on:click="showDialog = !showDialog">Click Me!</button></div>
+        <div class="h-36 w-72 bg-white">holaaa</div>
     </div>
 </template>
 
