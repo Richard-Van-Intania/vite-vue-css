@@ -1,10 +1,9 @@
 <script setup lang="ts">
-import AnimModal from "./components/modals/AnimModal.vue";
-import BasicModal from "./components/modals/BasicModal.vue";
+import AnimModalTw from "./components/modals/AnimModalTw.vue";
 </script>
 
 <template>
-  <div><AnimModal /></div>
+  <div><AnimModalTw /></div>
 </template>
 
 <style scoped></style>
