@@ -36,8 +36,8 @@ function dismiss(event: any): void {
       </div>
       <div class="py-6"><hr class="h-0 border-0 border-t border-gray-300" /></div>
       <div class="flex gap-6">
-        <button type="button" class="cursor-pointer bg-blue-700 py-3 px-4 rounded-xl text-base text-white" v-on:click="close()">I accept</button>
-        <button type="button" class="cursor-pointer bg-gray-50 border border-gray-300 py-3 px-4 rounded-xl text-base text-gray-600" v-on:click="close()">Decline</button>
+        <button type="button" class="cursor-pointer bg-blue-700 py-3 px-5 rounded-xl text-base text-white" v-on:click="close()">I accept</button>
+        <button type="button" class="cursor-pointer bg-gray-50 border border-gray-300 py-3 px-5 rounded-xl text-base text-gray-600" v-on:click="close()">Decline</button>
       </div>
     </div>
   </div>
