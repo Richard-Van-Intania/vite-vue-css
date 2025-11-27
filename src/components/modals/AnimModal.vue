@@ -23,7 +23,7 @@ function dismiss(event: any): void {
     <button type="button" class="bg-blue-500 px-8 py-4 rounded-full text-white font-medium text-2xl cursor-pointer shadow-lg m-10 z-10" v-on:click="open()">Show dialog</button>
   </div>
   <div class="fixed inset-0 size-auto max-h-none max-w-none bg-blk-op-40 justify-center items-center z-20" v-bind:class="[showDialog ? 'flex' : 'hidden']" v-on:click="(event) => dismiss(event)">
-    <div class="bg-white z-50 w-2xl rounded-xl p-6">
+    <div class="bg-white z-50 w-2xl rounded-xl p-6 modal-content" v-bind:class="[showDialog ? 'show' : 'hide']">
       <div class="flex justify-between items-center">
         <div class="text-lg font-medium">Terms of Service</div>
         <button type="button" class="cursor-pointer" v-on:click="close()"><Icon icon="ri:close-line" style="color: grey; font-size: 32px" /></button>
@@ -43,4 +43,38 @@ function dismiss(event: any): void {
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.modal-content {
+  animation-duration: 0.3s;
+}
+
+.show {
+  animation-name: scaleIn;
+}
+
+.hide {
+  animation-name: scaleOut;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0.975);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes scaleOut {
+  from {
+    transform: scale(1);
+    opacity: 1;
+  }
+  to {
+    transform: scale(0.975);
+    opacity: 0;
+  }
+}
+</style>
