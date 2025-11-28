@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import AnimModal from "./components/modals/AnimModal.vue";
+import BasicDropdown from "./components/dropdown/BasicDropdown.vue";
 </script>
 
 <template>
-  <div><AnimModal /></div>
+  <BasicDropdown />
 </template>
 
 <style scoped></style>
