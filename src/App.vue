@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import BasicDropdown from "./components/dropdown/BasicDropdown.vue";
+import BasicOffcanvas from "./components/offcanvas/BasicOffcanvas.vue";
 </script>
 
 <template>
-  <BasicDropdown />
+  <BasicOffcanvas />
 </template>
 
 <style scoped></style>
