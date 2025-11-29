@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
+import { Icon } from "@iconify/vue";
 const show = ref<boolean>(false);
 
 function open(): void {
@@ -12,10 +13,9 @@ function close(): void {
 </script>
 
 <template>
-  <div class="fixed right-0 bottom-0 size-auto max-h-none max-w-none">
-    <button type="button" class="bg-blue-500 px-8 py-4 rounded-full text-white font-medium text-2xl cursor-pointer shadow-lg m-10 z-10" v-on:click="open()">Show Offcanvas</button>
+  <div>
+    <button type="button" class="cursor-pointer my-4 mx-6" v-on:click="close()"><Icon icon="ri:menu-line" style="color: black; font-size: 32px" /></button>
   </div>
-  <div></div>
 </template>
 
 <style scoped></style>
