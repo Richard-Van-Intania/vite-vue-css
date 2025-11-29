@@ -13,10 +13,26 @@ function close(): void {
 </script>
 
 <template>
-  <div id="btn">
-    <button type="button" class="cursor-pointer my-4 mx-6" v-on:click="close()"><Icon icon="ri:menu-line" style="color: black; font-size: 32px" /></button>
+  <div id="btn-open">
+    <button type="button" class="cursor-pointer my-4 mx-6" v-on:click="open()"><Icon icon="ri:menu-line" style="color: black; font-size: 32px" /></button>
   </div>
-  <div id="overlay" class="fixed inset-0 size-auto max-h-none max-w-none bg-blk-op-40 z-20"><div class=""></div></div>
+  <div id="overlay" class="fixed inset-0 size-auto max-h-none max-w-none bg-blk-op-40 z-20" v-bind:class="[show ? 'block' : 'hidden']">
+    <div class="bg-white w-96 h-full flex flex-col py-4 px-6 z-30">
+      <div class="flex justify-between items-center">
+        <div class="text-lg font-medium">Offcanvas</div>
+        <div id="btn-close">
+          <button type="button" class="cursor-pointer" v-on:click="close()"><Icon icon="ri:close-line" style="color: black; font-size: 32px" /></button>
+        </div>
+      </div>
+      <div class="py-6"><hr class="h-0 border-0 border-t border-gray-300" /></div>
+      <div class="text-base text-gray-600">
+        With less than a month to go before the European Union enacts new consumer privacy laws for its citizens, companies around the world are updating their terms of service agreements to comply. <br /><br />
+        The European Union's General Data Protection Regulation (G.D.P.R.) goes into effect on May 25 and is meant to ensure a common set of data rights in the European Union. It requires organizations to notify users as soon as possible of
+        high-risk data breaches that could personally affect them.
+      </div>
+    </div>
+  </div>
+  <div class="text-lg font-medium text-center">Offcanvas Demo</div>
 </template>
 
 <style scoped></style>
