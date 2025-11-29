@@ -26,6 +26,23 @@ function markLeave(id: string) {
     }
   }
 }
+
+watch(toastList, (newToastList) => {
+  const tl: Snackbar[] = [];
+  const date1 = new Date();
+  for (const element of newToastList) {
+    if (element.leavingTime) {
+      const differenceInMilliseconds = Math.abs(date1.getTime() - element.leavingTime.getTime());
+      const differenceInSeconds = differenceInMilliseconds / 1000;
+      if (differenceInSeconds < 3) {
+        tl.push(element);
+      }
+    } else {
+      tl.push(element);
+    }
+  }
+  toastList.value = tl;
+});
 </script>
 
 <template>
