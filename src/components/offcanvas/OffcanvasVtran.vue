@@ -19,7 +19,7 @@ function close() {
     </button>
   </div>
 
-  <div id="overlay" class="fixed inset-0 bg-blk-op-40 z-20" :class="show ? 'block' : 'hidden'">
+  <div id="overlay" class="fixed inset-0 bg-blk-op-40 z-20" :class="show ? '' : 'hidden'">
     <!-- Transition only for the sliding panel -->
     <transition name="slide">
       <div v-if="show" class="fixed left-0 top-0 bg-white w-96 h-full flex flex-col py-4 px-6 z-30">
