@@ -2,6 +2,11 @@
 
 - some component and tailwind
 - css animation and all of
-- css
+- css master
 
 - project use bootstrap
+
+- project use tailwind component and config
+- project use vue component lib and config
+
+- master css html ui
