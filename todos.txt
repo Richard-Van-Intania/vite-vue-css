@@ -1,3 +1,7 @@
 - do bootstrap use tailwind
 
+- some component and tailwind
+- css animation and all of
+- css
 
+- project use bootstrap
