@@ -35,7 +35,15 @@ const list = computed(() => {
 
 <template>
   <div>
-    <div><input type="text" v-model="msg" class="bg-amber-100" /><button type="button" class=" ml-6 bg-blue-500  rounded-2xl py-2 px-6 font-medium text-2xl  text-white" v-on:click="addSnackbar({ id: uuidv4(), message: msg, leaving: false, gone: false })">Add Snackbar</button></div>
+    <div>
+      <input type="text" v-model="msg" class="bg-amber-100" /><button
+        type="button"
+        class="ml-6 bg-blue-500 rounded-2xl py-2 px-6 font-medium text-2xl text-white"
+        v-on:click="addSnackbar({ id: uuidv4(), message: msg, leaving: false, gone: false })"
+      >
+        Add Snackbar
+      </button>
+    </div>
     <div class="fixed top-6 right-6 z-10 flex flex-col gap-1">
       <ToastItem v-for="(element, index) in list" v-bind:key="index" v-bind:toast="element" v-on:leaving="(id) => markLeave(id)" v-on:gone="(id) => markGone(id)" />
     </div>
