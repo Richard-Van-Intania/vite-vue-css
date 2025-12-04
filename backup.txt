@@ -5,3 +5,8 @@
 </template>
 
 <style scoped></style>
+
+
+
+
+<button type="button">Normal Button</button>
