@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import Transforms from "./components/learn/Transforms.vue";
+import TransAcc from "./components/accordion/TransAcc.vue";
 </script>
 
 <template>
-  <Transforms />
+  <TransAcc />
 </template>
 
 <style scoped></style>
