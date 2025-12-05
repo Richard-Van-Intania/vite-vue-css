@@ -15,3 +15,5 @@
 
 bloc-flex ---> flex
 inline-flex ---> inline-flex
+
+- use component and ui lib
