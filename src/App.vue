@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import TransAcc from "./components/accordion/TransAcc.vue";
+import BasicCarousel from "./components/carousel/BasicCarousel.vue";
 </script>
 
 <template>
-  <TransAcc />
+  <BasicCarousel />
 </template>
 
 <style scoped></style>
