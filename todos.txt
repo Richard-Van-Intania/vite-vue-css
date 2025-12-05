@@ -10,3 +10,8 @@
 - project use vue component lib and config
 
 - master css html ui
+
+- flex ----> bloc-flex
+
+bloc-flex ---> flex
+inline-flex ---> inline-flex

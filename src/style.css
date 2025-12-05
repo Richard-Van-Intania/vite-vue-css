@@ -6,7 +6,23 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-bg-color: green; /* global scope */
+}
+
 @theme {
   --color-blk-op-40: rgba(0, 0, 0, 0.4);
   --color-blk-op-50: rgba(0, 0, 0, 0.5);
+}
+
+#p1 {
+  background-color: rgba(255, 0, 0, 0.3);
+}
+
+#p4 {
+  background-color: rgb(0, 0, 255);
+}
+
+#p5 {
+  background-color: #0000ff;
 }
