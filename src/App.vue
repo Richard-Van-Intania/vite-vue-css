@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import VtransOffcanvas from "./components/offcanvas/VtransOffcanvas.vue";
+import VtransModal2 from "./components/modals/VtransModal2.vue";
 </script>
 
 <template>
-  <VtransOffcanvas />
+  <VtransModal2 />
 </template>
 
 <style scoped></style>
