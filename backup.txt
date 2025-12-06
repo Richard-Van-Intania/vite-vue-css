@@ -19,3 +19,8 @@ max-width	Sets the maximum width of an element
 min-height	Sets the minimum height of an element
 min-width	Sets the minimum width of an element
 width	Sets the width of an element
+
+
+
+<Transition></Transition> ---> for single tag or v-if v-show
+<TransitionGroup></TransitionGroup> ---> for multi tag or v-for

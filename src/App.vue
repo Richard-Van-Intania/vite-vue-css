@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import CraftOffcanvas from "./components/offcanvas/CraftOffcanvas.vue";
+import VtransOffcanvas from "./components/offcanvas/VtransOffcanvas.vue";
 </script>
 
 <template>
-  <CraftOffcanvas />
+  <VtransOffcanvas />
 </template>
 
 <style scoped></style>
