@@ -26,7 +26,7 @@ function dismiss(event: PointerEvent): void {
       <div title="overlay" v-if="openModal" class="fixed inset-0 bg-blk-op-40 z-20"></div>
     </Transition>
     <Transition name="modal"
-      ><div v-show="openModal" class="fixed inset-0 z-30 flex justify-center items-center" v-on:click="(event: PointerEvent) => dismiss(event)">
+      ><div v-if="openModal" class="fixed inset-0 z-30 flex justify-center items-center" v-on:click="(event: PointerEvent) => dismiss(event)">
         <div class="w-[480px] h-72 bg-amber-100 px-5 py-4 rounded-2xl flex flex-col z-40">
           <div class="flex justify-between items-center">
             <div class="font-medium text-2xl">Modal title</div>
@@ -42,6 +42,7 @@ function dismiss(event: PointerEvent): void {
 .overlay-leave-to {
   opacity: 0;
 }
+
 .overlay-enter-to,
 .overlay-leave-from {
   opacity: 1;
@@ -56,13 +57,15 @@ function dismiss(event: PointerEvent): void {
 .modal-leave-to {
   transform: scale(0.975);
 }
+
 .modal-enter-to,
 .modal-leave-from {
   transform: scale(1);
 }
 
-.modal-enter-active,
-.modal-leave-active {
+.modal-enter-active {
   transition: transform 0.25s;
 }
+
+/** modal animate only enter better */
 </style>

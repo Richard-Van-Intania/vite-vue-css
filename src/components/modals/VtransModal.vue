@@ -26,7 +26,7 @@ function dismiss(event: PointerEvent): void {
       <div title="overlay" v-if="openModal" class="fixed inset-0 bg-blk-op-40 z-20"></div>
     </Transition>
     <Transition name="modal"
-      ><div v-show="openModal" class="fixed inset-0 z-30 flex justify-center items-center" v-on:click="(event: PointerEvent) => dismiss(event)">
+      ><div v-if="openModal" class="fixed inset-0 z-30 flex justify-center items-center" v-on:click="(event: PointerEvent) => dismiss(event)">
         <div class="w-[480px] h-72 bg-amber-100 px-5 py-4 rounded-2xl flex flex-col z-40">
           <div class="flex justify-between items-center">
             <div class="font-medium text-2xl">Modal title</div>
