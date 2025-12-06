@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref } from "vue";
+import { Icon } from "@iconify/vue";
 
 const openOffcanvas = ref<boolean>(false);
 
@@ -46,24 +47,20 @@ function dismiss(event: PointerEvent): void {
 
 .overlay-enter-active,
 .overlay-leave-active {
-  transition: opacity 1s;
+  transition: opacity 0.25s;
 }
 
-.offcanvas-enter-from {
-  opacity: 0;
-}
-.offcanvas-enter-to {
-  opacity: 1;
-}
-.offcanvas-leave-from {
-  opacity: 1;
-}
+.offcanvas-enter-from,
 .offcanvas-leave-to {
-  opacity: 0;
+  transform: translateX(-100%);
+}
+.offcanvas-enter-to,
+.offcanvas-leave-from {
+  transform: translateX(0%);
 }
 
 .offcanvas-enter-active,
 .offcanvas-leave-active {
-  transition: opacity 1s;
+  transition: transform 0.25s;
 }
 </style>
