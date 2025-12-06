@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { computed, watch } from "vue";
 import { monthNames } from "../../utilities";
 import { Icon } from "@iconify/vue";
 </script>

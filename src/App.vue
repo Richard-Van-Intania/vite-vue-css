@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import BasicCarousel from "./components/carousel/BasicCarousel.vue";
+import CraftOffcanvas from "./components/offcanvas/CraftOffcanvas.vue";
 </script>
 
 <template>
-  <BasicCarousel />
+  <CraftOffcanvas />
 </template>
 
 <style scoped></style>
