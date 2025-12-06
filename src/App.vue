@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import VtransToast from "./components/toast/VtransToast.vue";
+import VtransToastComp from "./components/toast/VtransToastComp.vue";
 </script>
 
 <template>
-  <VtransToast />
+  <VtransToastComp />
 </template>
 
 <style scoped></style>
