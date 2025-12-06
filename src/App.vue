@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import CraftOffcanvas from "./components/offcanvas/CraftOffcanvas.vue";
+import CraftModal from "./components/modals/CraftModal.vue";
 </script>
 
 <template>
-  <CraftOffcanvas />
+  <CraftModal />
 </template>
 
 <style scoped></style>

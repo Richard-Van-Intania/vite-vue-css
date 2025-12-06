@@ -22,7 +22,7 @@ function dismiss(event: PointerEvent): void {
 <template>
   <div>
     <button title="opn-btn" type="button" class="fixed bottom-0 right-0 m-10 z-10 bg-blue-500 px-8 py-4 rounded-full text-white font-medium text-2xl cursor-pointer shadow-lg" v-on:click="open()">Show Offcanvas</button>
-    <div title="overlay" class="fixed inset-0 bg-blk-op-40 z-20 transition-opacity" v-bind:class="[openOffcanvas ? 'block opacity-100' : 'hidden opacity-0']" v-on:click="(event: PointerEvent) => dismiss(event)"></div>
+    <div title="overlay" class="fixed inset-0 bg-blk-op-40 z-20 transition-opacity" v-bind:class="[openOffcanvas ? 'visible opacity-100' : 'invisible opacity-0']" v-on:click="(event: PointerEvent) => dismiss(event)"></div>
     <div title="offcanvas" class="fixed left-0 top-0 bottom-0 z-30 h-full w-[400px] bg-amber-200 transition-transform" v-bind:class="[openOffcanvas ? 'translate-x-0' : '-translate-x-[400px]']">
       <div title="offcanvas-column" class="flex flex-col px-5 py-4">
         <div class="flex justify-between items-center">
