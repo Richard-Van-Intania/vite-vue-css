@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import VtransModal2 from "./components/modals/VtransModal2.vue";
+import VtransToast from "./components/toast/VtransToast.vue";
 </script>
 
 <template>
-  <VtransModal2 />
+  <VtransToast />
 </template>
 
 <style scoped></style>
